@@ -1,4 +1,4 @@
-# UrbanKG_GraphRAG
+# UrbanRAG
 
 UrbanKG_GraphRAG is a knowledge-graph–enhanced geocoding research system that combines Urban Knowledge Graph retrieval with spatial constraint reasoning. It targets Japanese addresses and improves coordinate inference by grounding LLM reasoning in graph-derived spatial context.
 
