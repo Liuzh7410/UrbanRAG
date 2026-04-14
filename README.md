@@ -1,6 +1,6 @@
 # UrbanRAG
 
-UrbanKG_GraphRAG is a knowledge-graph–enhanced geocoding research system that combines Urban Knowledge Graph retrieval with spatial constraint reasoning. It targets Japanese addresses and improves coordinate inference by grounding LLM reasoning in graph-derived spatial context.
+UrbanRAG is a knowledge-graph–enhanced geocoding research system that combines Urban Knowledge Graph retrieval with spatial constraint reasoning. It targets Japanese addresses and improves coordinate inference by grounding LLM reasoning in graph-derived spatial context.
 
 ## Research Summary
 
@@ -15,7 +15,7 @@ The system integrates three key components:
    - If Block missing, neighbor Blocks are searched (limited radius)
    - If still missing, Area-level POIs are used as fallback
 
-3. **Spatial Constraint Algorithm (DCABG)**
+3. **Spatial Constraint Algorithm**
    - Uses Area boundary + Road network to generate a virtual block polygon
    - Seeds (POIs/Block point/Area centroid) anchor the correct polygon
    - Outputs centroid/bounds/radius to constrain LLM reasoning
@@ -31,10 +31,10 @@ The system integrates three key components:
 
 ## Baselines and Experiments
 
-- **LLM-only** (no KG, no constraints)
-- **Plain Text RAG** (retrieval over KG text corpus)
-- **LightRAG (Textural KG)** (retrieval over node/edge textualized corpus)
-- **GraphRAG (UrbanKG + DCABG)** (main method)
+- **LLM-only**
+- **RAG** 
+- **LightRAG** 
+- **GraphRAG**
 
 Experiments are conducted with 100 / 1000 / 10000 samples for each dataset.
 
